@@ -30,6 +30,7 @@ const CitiesProvider = ({ children }) => {
 
         try {
             setIsLoading(true);
+            console.log(id);
             const res = await fetch(`${CITIES_URL}/${id}`);
             const data = await res.json();
             setCurrentCity(data);
