@@ -4,7 +4,7 @@ import { useCities } from '../contexts/CitiesContexts';
 const CityItem = ({ city }) => {
 
     const { cityName, emoji, date, id, position } = city;
-    const { currentCity } = useCities();
+    const { currentCity, deleteCity } = useCities();
     const formatDate = (date) =>
         new Intl.DateTimeFormat("en", {
             day: "numeric",
@@ -18,15 +18,18 @@ const CityItem = ({ city }) => {
         return (<img src={`https://flagcdn.com/24x18/${countryCode}.png`} alt='flag' />)
     }
 
-
+    const handleClick = (e) => {
+        e.preventDefault();
+        deleteCity(id);
+    }
 
     return (
         <li >
-            <Link className={`${styles.cityItem} ${id === currentCity.id ? styles['cityItem--active'] : "" }`} to={`${id}?lat=${position.lat}&lng=${position.lng}`}>
+            <Link className={`${styles.cityItem} ${id === currentCity.id ? styles['cityItem--active'] : ""}`} to={`${id}?lat=${position.lat}&lng=${position.lng}`}>
                 <span className={styles.emoji}>{flagemojiToPNG(emoji)}</span>
                 <h3 className={styles.name}>{cityName}</h3>
                 <time className={styles.date}>{formatDate(date)}</time>
-                <button className={styles.deleteBtn}>&times;</button>
+                <button className={styles.deleteBtn} onClick={handleClick}>&times;</button>
             </Link>
         </li>
     )
