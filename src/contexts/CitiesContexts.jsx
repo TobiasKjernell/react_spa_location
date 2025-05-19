@@ -27,7 +27,7 @@ const reducer = (state, action) => {
             }
         case 'city/created':
             return {
-                ...state, isLoading: false, cities: [...state.cities, action.payload]
+                ...state, isLoading: false, cities: [...state.cities, action.payload], currentCity: action.payload
             }
         case 'city/deleted':
             return {
@@ -46,7 +46,7 @@ const CitiesProvider = ({ children }) => {
     // const [cities, setCities] = useState([]);
     // const [isLoading, setIsLoading] = useState(false);
     // const [currentCity, setCurrentCity] = useState({})
-    const [{ cities, isLoading, currentCity }, dispatch] = useReducer(reducer, initialState);
+    const [{ cities, isLoading, currentCity, error }, dispatch] = useReducer(reducer, initialState);
 
 
     useEffect(() => {
@@ -65,6 +65,8 @@ const CitiesProvider = ({ children }) => {
     }, [])
 
     const getCity = async (id) => {
+        if(currentCity.id === Number(id)) return;
+        
         dispatch({ type: 'loading' })
         try {
             const res = await fetch(`${CITIES_URL}/${id}`);
@@ -106,6 +108,7 @@ const CitiesProvider = ({ children }) => {
             cities,
             isLoading,
             currentCity,
+            error,
             getCity,
             createCity,
             deleteCity

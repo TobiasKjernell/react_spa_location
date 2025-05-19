@@ -71,6 +71,30 @@
         "lat": "40.27952566881291",
         "lng": "34.73876953125001"
       }
+    },
+    {
+      "id": "1370",
+      "cityName": "Castello de la Plana",
+      "country": "Spain",
+      "emoji": "🇪🇸",
+      "date": "2025-05-13T11:57:41.949Z",
+      "notes": "Test notes\n",
+      "position": {
+        "lat": "40.02156760530186",
+        "lng": "-0.05596160888671876"
+      }
+    },
+    {
+      "id": "3941",
+      "cityName": "Benicassim",
+      "country": "Spain",
+      "emoji": "🇪🇸",
+      "date": "2025-05-13T12:03:33.171Z",
+      "notes": "asd",
+      "position": {
+        "lat": "40.03944364595754",
+        "lng": "0.012531280517578127"
+      }
     }
   ]
 }
