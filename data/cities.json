@@ -1,99 +1,27 @@
 {
   "cities": [
     {
-      "cityName": "Berlin",
-      "country": "Germany",
-      "emoji": "🇩🇪",
-      "date": "2027-02-12T09:24:11.863Z",
-      "notes": "Amazing 😃",
-      "position": {
-        "lat": 52.53586782505711,
-        "lng": 13.376933665713324
-      },
-      "id": "98443197"
-    },
-    {
-      "id": "d986",
-      "cityName": "Fla",
-      "country": "Norway",
-      "emoji": "🇳🇴",
-      "date": "2025-05-09T16:38:04.697Z",
-      "notes": "",
-      "position": {
-        "lat": "60.43554230669233",
-        "lng": "9.404296875000002"
-      }
-    },
-    {
-      "id": "2301",
-      "cityName": "Bonzee",
-      "country": "France",
-      "emoji": "🇫🇷",
-      "date": "2025-05-09T16:38:15.054Z",
-      "notes": "",
-      "position": {
-        "lat": "49.06666839558117",
-        "lng": "5.537109375000001"
-      }
-    },
-    {
-      "id": "6436",
-      "cityName": "Rome",
-      "country": "Italy",
-      "emoji": "🇮🇹",
-      "date": "2025-05-09T16:39:33.832Z",
-      "notes": "",
-      "position": {
-        "lat": "42.032974332441405",
-        "lng": "12.919921875000002"
-      }
-    },
-    {
-      "id": "dc66",
-      "cityName": "Berbesti",
-      "country": "Romania",
-      "emoji": "🇷🇴",
-      "date": "2025-05-09T16:47:25.430Z",
-      "notes": "",
-      "position": {
-        "lat": "44.99588261816546",
-        "lng": "23.8623046875"
-      }
-    },
-    {
-      "id": "2c75",
-      "cityName": "Alaca",
-      "country": "Turkiye",
-      "emoji": "🇹🇷",
-      "date": "2025-05-09T16:48:17.139Z",
-      "notes": "",
-      "position": {
-        "lat": "40.27952566881291",
-        "lng": "34.73876953125001"
-      }
-    },
-    {
-      "id": "1370",
+      "id": "c9c5",
       "cityName": "Castello de la Plana",
       "country": "Spain",
       "emoji": "🇪🇸",
-      "date": "2025-05-13T11:57:41.949Z",
-      "notes": "Test notes\n",
+      "date": "2025-06-29T12:48:40.601Z",
+      "notes": "",
       "position": {
-        "lat": "40.02156760530186",
-        "lng": "-0.05596160888671876"
+        "lat": "40.03234636708096",
+        "lng": "0.013046264648437502"
       }
     },
     {
-      "id": "3941",
+      "id": "5a1c",
       "cityName": "Benicassim",
       "country": "Spain",
       "emoji": "🇪🇸",
-      "date": "2025-05-13T12:03:33.171Z",
-      "notes": "asd",
+      "date": "2025-06-29T13:33:11.688Z",
+      "notes": "",
       "position": {
-        "lat": "40.03944364595754",
-        "lng": "0.012531280517578127"
+        "lat": "40.05560691262946",
+        "lng": "0.010643005371093752"
       }
     }
   ]
